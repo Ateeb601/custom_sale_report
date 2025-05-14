@@ -5,7 +5,7 @@ from odoo import models, fields, api
 class SaleOrderExtension(models.Model):
     _inherit = 'sale.order'
 
-    # appointment_id = fields.Date(string='Appointment')
+    appointment_id = fields.Date(string='Appointment')
 
 
 
