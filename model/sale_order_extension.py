@@ -18,4 +18,9 @@ class SaleOrderExtension(models.Model):
             'target': 'new',
         }
 
+    mobile = fields.Char(string='Phone Number', required=True, tracking=True)  # Mobile number (tracked)
+    email = fields.Char(string='Email', required=True, tracking=True)  # Email address (tracked)
+    dob = fields.Date(string='Date of Birth')  # Patient's date of birth
+    address = fields.Char(string='Address', required=True, tracking=True)  # Address (tracked)
+
 
