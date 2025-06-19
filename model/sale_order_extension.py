@@ -23,4 +23,5 @@ class SaleOrderExtension(models.Model):
     dob = fields.Date(string='Date of Birth')  # Patient's date of birth
     address = fields.Char(string='Address', required=True, tracking=True)  # Address (tracked)
 
+    line_note = fields.Text(string="Line Note")
 

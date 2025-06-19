@@ -18,12 +18,20 @@
                 <field name="address"/>
             </xpath>
 
-<!--            <group>-->
-<!--                <field name="dob"/>-->
-<!--                <field name="mobile"/>-->
-<!--                <field name="email"/>-->
-<!--                <field name="address"/>-->
-<!--            </group>-->
+            <!--            <group>-->
+            <!--                <field name="dob"/>-->
+            <!--                <field name="mobile"/>-->
+            <!--                <field name="email"/>-->
+            <!--                <field name="address"/>-->
+            <!--            </group>-->
+
+            <xpath expr="//page[@name='order_lines']//field[@name='product_template_id']" position="after">
+                <field name="line_note"/>
+            </xpath>
+
+            <xpath expr="//page[@name='other_information']//field[@name='user_id']" position="after">
+                <field name="line_note"/>
+            </xpath>
         </field>
     </record>
 
